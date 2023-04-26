@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Paytone One';
+    src: url('../fonts/PaytoneOne-Regular.ttf') format('truetype');
+} 
+
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+} 
+
+.text-glow-white {
+  text-shadow: -1px 2px 15px rgba(255,255,255,0.56);
+}
+
+.shine {
+  animation-duration: 3s;
+  animation-name: shine-frames;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.69, 0.04, 0.04, 0.84);
+}
+
+@keyframes shine-frames {
+  0% {
+    text-shadow: -1px 2px 15px rgba(255,255,255,0.56);
+  }
+  50% {
+    text-shadow: -1px 2px 25px rgba(255,255,255,0.56);
+  }
+  100% {
+    text-shadow: -1px 2px 15px rgba(255,255,255,0.56);
+  }
+}
